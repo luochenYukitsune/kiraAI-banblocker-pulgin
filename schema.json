@@ -1,0 +1,44 @@
+{
+    "enabled": {
+        "name": "启用插件",
+        "type": "boolean",
+        "default": true,
+        "hint": "是否启用禁言通知拦截功能"
+    },
+    "log_all_messages": {
+        "name": "输出所有消息日志",
+        "type": "boolean",
+        "default": true,
+        "hint": "是否输出所有消息的调试日志（方便排查）"
+    },
+    "log_matched_only": {
+        "name": "仅日志记录匹配消息",
+        "type": "boolean",
+        "default": false,
+        "hint": "是否仅在匹配到禁言消息时输出日志（与log_all_messages互斥）"
+    },
+    "ban_pattern": {
+        "name": "禁言正则表达式",
+        "type": "string",
+        "default": "\\[System.*禁言了.*\\]",
+        "hint": "匹配禁言通知的正则表达式"
+    },
+    "check_is_notice": {
+        "name": "检查is_notice标志",
+        "type": "boolean",
+        "default": true,
+        "hint": "是否同时检查消息的is_notice标志为True"
+    },
+    "replace_message": {
+        "name": "替换消息内容",
+        "type": "boolean",
+        "default": true,
+        "hint": "是否将被拦截的禁言消息内容替换为提示文本"
+    },
+    "replacement_text": {
+        "name": "替换文本",
+        "type": "string",
+        "default": "",
+        "hint": "替换被拦截消息的文本内容（设为空则完全清除消息）"
+    }
+}

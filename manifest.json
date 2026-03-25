@@ -1,0 +1,8 @@
+{
+    "display_name": "禁言通知拦截器",
+    "plugin_id": "ban_notice_blocker",
+    "version": "1.0.0",
+    "author": "KiraAI Plugin Developer",
+    "description": "拦截和过滤QQ群禁言系统通知消息，通过正则表达式匹配禁言格式并判断is_notice标志",
+    "repo": null
+}
